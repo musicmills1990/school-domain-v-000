@@ -22,7 +22,10 @@ class School
     @roster.collect do |grade, students|
     students.sort
     end
+    roster
   end
+  
+  
 end
 
 
