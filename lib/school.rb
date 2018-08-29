@@ -11,12 +11,11 @@ class School
 def add_student(grade, student)
   @roster[student] ||= []
   @roster[student] << grade
-  
+
 end
 
 def grade(grade)
   @roster.values
-
 end
 
 def sort
