@@ -8,19 +8,21 @@ class School
   attr_accessor :roster
 
 
-def add_student(grade, student)
-  @roster[student] ||= []
-  @roster[student] << grade
+  def add_student(grade, student)
+    @roster[student] ||= []
+    @roster[student] << grade
 
-end
+  end
 
-def grade(grade)
-  @roster[grade]
-end
+  def grade(grade)
+    @roster[grade]
+  end
 
-def sort
-  @roster.sort
-end
+  def sort
+    @roster.each do |students, grade|
+      students.sort
+    end
+  end
 
 end
 
