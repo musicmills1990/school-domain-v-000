@@ -15,6 +15,7 @@ def add_student(grade, student)
 end
 
 def grade(grade)
+  @roster.values
 
 end
 
