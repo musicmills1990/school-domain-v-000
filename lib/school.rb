@@ -19,15 +19,11 @@ class School
   end
 
   def sort
+    new_sorted_hash = {}
     @roster.collect do |grade, students|
-    students.sort
+    new_sorted_hash << students.sort
     end
-    roster
+    return new_sorted_hash
   end
-
-
 end
 
-
-#some if statement that suggests if the key is already in the
-#hash, push the key's value into an array with the other value.
