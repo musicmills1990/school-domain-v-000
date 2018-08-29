@@ -21,7 +21,7 @@ class School
   def sort
     sorted_roster ={}
     @roster.collect do |grade, students|
-    grade.sort
+    grade.to_s.sort
     sorted_roster << students.sort
     end
     return sorted_roster
