@@ -19,11 +19,15 @@ class School
   end
 
   def sort
-    new_sorted_hash = {}
     @roster.collect do |grade, students|
     students.sort
     end
-    new_sorted_hash << @roster
-    return new_sorted_hash
+    @roster
   end
+
+
+
+
+
+  
 end
