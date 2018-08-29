@@ -9,9 +9,8 @@ Hash.new
 end
 
 def add_student(grade, student)
-  roster[grade] = []
-  roster[grade] << ["#{student}"]
-  
+  h = roster{|roster, grade| roster[grade] = []}
+h[grade].push "#{student}"
 end
 
 def grade(grade)
