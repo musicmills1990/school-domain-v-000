@@ -6,13 +6,12 @@ class School
 
   attr_accessor :roster
 
-  @roster = {}
 
 def add_student(grade, student)
   @roster[grade] = []
   #some if statement that suggests if the key is already in the
   #hash, push the key's value into an array with the other value.
-  roster[grade] << student
+  @roster[grade] << student
 end
 
 def grade(grade)
