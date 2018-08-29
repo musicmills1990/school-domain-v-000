@@ -15,7 +15,7 @@ def add_student(grade, student)
 end
 
 def grade(grade)
-  @roster[grade].values
+  @roster[grade]
 end
 
 def sort
