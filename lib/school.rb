@@ -22,8 +22,6 @@ class School
     @roster.collect do |grade, students|
       grade: students.sort
     end
-  end
-
 end
 
 
