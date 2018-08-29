@@ -5,12 +5,13 @@ class School
   end
 
 def roster
-{}
+Hash.new
 end
 
 def add_student(grade, student)
   roster[grade] = []
   roster[grade] << ["#{student}"]
+  
 end
 
 def grade(grade)
