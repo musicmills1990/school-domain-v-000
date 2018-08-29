@@ -6,7 +6,7 @@ class School
     @sorted_roster = {}
   end
 
-  attr_accessor :roster
+  attr_accessor :roster, :sorted_roster
 
 
   def add_student(grade, student)
