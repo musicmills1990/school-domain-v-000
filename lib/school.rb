@@ -3,10 +3,9 @@ class School
   def initialize(name)
     @name = name
     @roster = {}
-    @sorted_roster = {}
   end
 
-  attr_accessor :roster, :sorted_roster
+  attr_accessor :roster
 
 
   def add_student(grade, student)
