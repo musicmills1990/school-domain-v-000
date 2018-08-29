@@ -29,5 +29,5 @@ class School
 
 
 
-  
+
 end
