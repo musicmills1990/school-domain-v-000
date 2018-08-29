@@ -26,4 +26,3 @@ class School
     return new_sorted_hash
   end
 end
-
